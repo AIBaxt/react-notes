@@ -1,0 +1,16 @@
+{
+  "notes": [
+    {
+      "title": "Test note 1",
+      "details": "This is the first test note.",
+      "category": "todo",
+      "id": 1
+    },
+    {
+      "title": "Test note 2",
+      "details": "This is the second note.",
+      "category": "work",
+      "id": 2
+    }
+  ]
+}

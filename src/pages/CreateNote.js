@@ -1,3 +1,4 @@
+//Imports
 import { useState } from 'react';
 import { Container, TextField, Button, FormControl, FormLabel, RadioGroup, FormControlLabel, Radio, makeStyles, Typography } from '@material-ui/core';
 
@@ -10,6 +11,7 @@ const useStyles = makeStyles({
 });
 
 const CreateNote = props => {
+    //Required States
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     const [category, setCategory] = useState('todo')
