@@ -20,6 +20,14 @@ const CreateNote = props => {
 
     const submitHandler = event => {
         event.preventDefault();
+
+        if (title && description) {
+            fetch('http://localhost:8000/notes', {
+                method: 'POST',
+                headers: { "Content-type": "application/json" },
+                body: JSON.stringify({ title, description, category })
+            });
+        }
     };
 
     return (
@@ -28,7 +36,6 @@ const CreateNote = props => {
             <form noValidate onSubmit={submitHandler}>
                 <TextField className={classes.tField} fullWidth label="Title" variant="outlined" required value={title} onChange={(e) => setTitle(e.target.value)} />
                 <TextField className={classes.tField} fullWidth label="Description" variant="outlined" multiline rows={3} required value={description} onChange={(e) => setDescription(e.target.value)} />
-
                 <FormControl className={classes.tField}>
                     <FormLabel>Category</FormLabel>
                     <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)}>
