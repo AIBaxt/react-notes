@@ -4,7 +4,7 @@ import CreateNote from './pages/CreateNote';
 function App() {
   return (
     <div>
-      <CreateNote />
+      <DisplayNotes />
     </div>
   );
 }

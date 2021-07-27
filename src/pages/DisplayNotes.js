@@ -1,9 +1,50 @@
-import { Container } from '@material-ui/core';
+import { React, useEffect, useState } from 'react';
+import { Container, Typography, Grid, Card, CardHeader, CardContent, makeStyles, IconButton } from '@material-ui/core';
+import DeleteIcon from '@material-ui/icons/Delete';
+
+const useStyles = makeStyles({
+    cardStyle: {
+        marginTop: 20,
+        marginBottom: 20,
+        marginLeft: 20
+    }
+});
+
 
 const DisplayNote = props => {
+    const classes = useStyles();
+    const [notesList, setNotesList] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:8000/notes')
+            .then(res => res.json())
+            .then(data => setNotesList(data));
+    }, [])
+
+    const deleteHandler = (e) => {
+        console.log('hello');
+    };
+
+
     return (
-        <div>
-        </div>
+        <Container>
+            <Grid container>
+                {notesList.map(note => (
+                    <Grid item key={note.id} xs={12} md={6} lg={4}>
+                        <Card className={classes.cardStyle}>
+                            <CardHeader title={note.title} subheader={note.category} action={<IconButton onClick={deleteHandler}><DeleteIcon /></IconButton>} />
+                            <CardContent>
+                                <Typography>
+                                    {note.description}
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                ))}
+
+            </Grid>
+
+        </Container>
     );
 };
 

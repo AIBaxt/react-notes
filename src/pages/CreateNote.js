@@ -44,7 +44,6 @@ const CreateNote = props => {
                         <FormControlLabel value="reminder" label="Reminder" control={<Radio />} />
                     </RadioGroup>
                 </FormControl>
-
                 <Button type="submit" variant="contained" color="primary">Submit</Button>
             </form>
         </Container>
