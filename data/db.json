@@ -1,28 +1,3 @@
 {
-  "notes": [
-    {
-      "title": "Test note 1",
-      "description": "This is the first test note.",
-      "category": "todo",
-      "id": 1
-    },
-    {
-      "title": "Test note 2",
-      "description": "This is the second note.",
-      "category": "work",
-      "id": 2
-    },
-    {
-      "title": "dsaf",
-      "description": "fdsa",
-      "category": "reminder",
-      "id": 3
-    },
-    {
-      "title": "Hello this is a note",
-      "description": "hello this is a note",
-      "category": "reminder",
-      "id": 4
-    }
-  ]
+  "notes": []
 }

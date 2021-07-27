@@ -10,7 +10,6 @@ const useStyles = makeStyles({
     }
 });
 
-
 const DisplayNote = props => {
     const classes = useStyles();
     const [notesList, setNotesList] = useState([]);
@@ -21,8 +20,13 @@ const DisplayNote = props => {
             .then(data => setNotesList(data));
     }, [])
 
-    const deleteHandler = (e) => {
-        console.log('hello');
+    const deleteHandler = async (id) => {
+        await fetch('http://localhost:8000/notes/' + id, {
+            method: 'DELETE'
+        })
+
+        const tmpArr = notesList.filter(note => note.id !== id)
+        setNotesList(tmpArr);
     };
 
 
@@ -32,7 +36,7 @@ const DisplayNote = props => {
                 {notesList.map(note => (
                     <Grid item key={note.id} xs={12} md={6} lg={4}>
                         <Card className={classes.cardStyle}>
-                            <CardHeader title={note.title} subheader={note.category} action={<IconButton onClick={deleteHandler}><DeleteIcon /></IconButton>} />
+                            <CardHeader title={note.title} subheader={note.category} action={<IconButton onClick={() => deleteHandler(note.id)}><DeleteIcon /></IconButton>} />
                             <CardContent>
                                 <Typography>
                                     {note.description}
@@ -41,9 +45,7 @@ const DisplayNote = props => {
                         </Card>
                     </Grid>
                 ))}
-
             </Grid>
-
         </Container>
     );
 };
