@@ -33,7 +33,7 @@ const DisplayNote = props => {
     return (
         <Container>
             <Grid container>
-                {notesList.map(note => (
+                {notesList.slice(0).reverse().map(note => (
                     <Grid item key={note.id} xs={12} md={6} lg={4}>
                         <Card className={classes.cardStyle}>
                             <CardHeader title={note.title} subheader={note.category} action={<IconButton onClick={() => deleteHandler(note.id)}><DeleteIcon /></IconButton>} />

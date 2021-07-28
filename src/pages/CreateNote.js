@@ -1,5 +1,6 @@
 //Imports
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Container, TextField, Button, FormControl, FormLabel, RadioGroup, FormControlLabel, Radio, makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -11,6 +12,7 @@ const useStyles = makeStyles({
 });
 
 const CreateNote = props => {
+    const history = useHistory();
     //Required States
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
@@ -26,7 +28,7 @@ const CreateNote = props => {
                 method: 'POST',
                 headers: { "Content-type": "application/json" },
                 body: JSON.stringify({ title, description, category })
-            });
+            }).then(history.push('/'));
         }
     };
 

@@ -19,10 +19,28 @@
       "id": 3
     },
     {
-      "title": "Hello this is a note",
-      "description": "hello this is a note",
-      "category": "reminder",
+      "title": "Hello",
+      "description": "this is a new work note",
+      "category": "todo",
       "id": 4
+    },
+    {
+      "title": "hello",
+      "description": "gfdas",
+      "category": "todo",
+      "id": 5
+    },
+    {
+      "title": "asdfdsa",
+      "description": "adsfdas",
+      "category": "reminder",
+      "id": 6
+    },
+    {
+      "title": "New note reversed",
+      "description": "is this reversed",
+      "category": "todo",
+      "id": 7
     }
   ]
 }
