@@ -3,6 +3,10 @@ import { Container, Typography, Grid, Card, CardHeader, CardContent, makeStyles,
 import DeleteIcon from '@material-ui/icons/Delete';
 
 const useStyles = makeStyles({
+
+    container: {
+        marginTop: 60
+    },
     cardStyle: {
         marginTop: 20,
         marginBottom: 20,
@@ -31,14 +35,14 @@ const DisplayNote = props => {
 
 
     return (
-        <Container>
+        <Container className={classes.container}>
             <Grid container>
                 {notesList.slice(0).reverse().map(note => (
                     <Grid item key={note.id} xs={12} md={6} lg={4}>
                         <Card className={classes.cardStyle}>
                             <CardHeader title={note.title} subheader={note.category} action={<IconButton onClick={() => deleteHandler(note.id)}><DeleteIcon /></IconButton>} />
                             <CardContent>
-                                <Typography>
+                                <Typography color="textSecondary" variant="subtitle2">
                                     {note.description}
                                 </Typography>
                             </CardContent>

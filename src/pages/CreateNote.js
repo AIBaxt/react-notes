@@ -8,6 +8,9 @@ const useStyles = makeStyles({
         marginTop: 10,
         marginBottom: 10,
         display: 'block'
+    },
+    container: {
+        marginTop: 70
     }
 });
 
@@ -33,7 +36,7 @@ const CreateNote = props => {
     };
 
     return (
-        <Container>
+        <Container className={classes.container}>
             <Typography variant="h6" color="textSecondary">Create a new Note</Typography>
             <form noValidate onSubmit={submitHandler}>
                 <TextField className={classes.tField} fullWidth label="Title" variant="outlined" required value={title} onChange={(e) => setTitle(e.target.value)} />

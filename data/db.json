@@ -1,46 +1,28 @@
 {
   "notes": [
     {
-      "title": "Test note 1",
-      "description": "This is the first test note.",
-      "category": "todo",
+      "title": "Upcoming Birthday",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut morbi. Diam quis enim lobortis scelerisque fermentum dui faucibus. Nibh sit amet commodo nulla facilisi. Enim sed faucibus turpis in eu mi bibendum. Tristique senectus et netus et. Vitae purus faucibus ornare suspendisse sed nisi. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Diam vulputate ut pharetra sit. Faucibus pulvinar elementum integer enim neque. Eu augue ut lectus arcu bibendum at varius vel. Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Faucibus purus in massa tempor nec feugiat nisl pretium fusce.",
+      "category": "reminder",
       "id": 1
     },
     {
-      "title": "Test note 2",
-      "description": "This is the second note.",
-      "category": "work",
+      "title": "Get Gas for Car",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut morbi. Diam quis enim lobortis scelerisque fermentum dui faucibus. Nibh sit amet commodo nulla facilisi. Enim sed faucibus turpis in eu mi bibendum. Tristique senectus et netus et. Vitae purus faucibus ornare suspendisse sed nisi. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Diam vulputate ut pharetra sit. Faucibus pulvinar elementum integer enim neque.",
+      "category": "todo",
       "id": 2
     },
     {
-      "title": "dsaf",
-      "description": "fdsa",
-      "category": "reminder",
+      "title": "Finish Notes App",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut morbi. Diam quis enim lobortis scelerisque fermentum dui faucibus. Nibh sit amet commodo nulla facilisi. Enim sed faucibus turpis in eu mi bibendum. Tristique senectus et netus et. Vitae purus faucibus ornare suspendisse sed nisi. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Diam vulputate ut pharetra sit. ",
+      "category": "work",
       "id": 3
     },
     {
-      "title": "Hello",
-      "description": "this is a new work note",
-      "category": "todo",
-      "id": 4
-    },
-    {
-      "title": "hello",
-      "description": "gfdas",
-      "category": "todo",
-      "id": 5
-    },
-    {
-      "title": "asdfdsa",
-      "description": "adsfdas",
+      "title": "Pay Bills",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut morbi. Diam quis enim lobortis scelerisque fermentum dui faucibus. Nibh sit amet commodo nulla facilisi. Enim sed faucibus turpis in eu mi bibendum. Tristique senectus et netus et. Vitae purus faucibus ornare suspendisse sed nisi. ",
       "category": "reminder",
-      "id": 6
-    },
-    {
-      "title": "New note reversed",
-      "description": "is this reversed",
-      "category": "todo",
-      "id": 7
+      "id": 4
     }
   ]
 }
